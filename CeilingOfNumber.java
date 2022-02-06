@@ -3,11 +3,15 @@ package Searching_And_Sorting;
 public class CeilingOfNumber {
     public static void main(String[] args) {
         int[] arr={-18,-12,-4,0,2,3,4,15,16,18,22,89};
-        int target=5;
+        int target=90;
         int ans=ceilingOfNumber(arr,target);System.out.println(ans);
     }
     static int ceilingOfNumber(int []arr,int target)
     {
+        if(target>arr[arr.length-1])
+        {
+                return -1;
+        }
         int start=0;
         int  end=arr.length-1;
         // find whether array is sorting in ascending or descending
