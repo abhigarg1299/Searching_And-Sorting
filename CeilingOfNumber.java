@@ -1,11 +1,12 @@
 package Searching_And_Sorting;
-public class OrderAgnosticBinarySearch {
+
+public class CeilingOfNumber {
     public static void main(String[] args) {
         int[] arr={-18,-12,-4,0,2,3,4,15,16,18,22,89};
         int target=5;
-        int ans=orderAgnosticBS(arr,target);System.out.println(ans);
+        int ans=ceilingOfNumber(arr,target);System.out.println(ans);
     }
-    static int orderAgnosticBS(int []arr,int target)
+    static int ceilingOfNumber(int []arr,int target)
     {
         int start=0;
         int  end=arr.length-1;
@@ -35,6 +36,6 @@ public class OrderAgnosticBinarySearch {
 
             }
         }
-        return -1;
+        return arr[start];
     }
 }
