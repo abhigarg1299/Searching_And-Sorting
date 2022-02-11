@@ -65,6 +65,32 @@ public class RotatedBs {
         {
                 return mid-1;
         }
+       // if elements at middle ,start,end,are equal then just ship the duplicates
+//        if(arr[mid]==arr[start] && arr[mid]==arr[end])
+//        {
+//            //skip the duplicates
+//            //Note: what if these elements at start and end were the pivot??
+//            // check if start is pivot
+//            if(arr[start]>arr[start+1])
+//            {
+//                    return start;
+//            }
+//            start++;
+//           // check whether end is pivot
+//            if(arr[end]<arr[end-1])
+//            {
+//                return end-1;
+//            }
+//            end--;
+//        }
+//        else if(arr[start]<arr[mid]|| arr[start]==arr[mid]&&arr[mid]>arr[end])
+//        {
+//            start=mid+1;
+//        }
+//        else
+//        {
+//            end=mid-1;
+//        }
         if(arr[start]>=arr[mid])
         {
             end=mid-1;

@@ -5,7 +5,7 @@ public class OrderAgnosticBinarySearch {
         int target=5;
         int ans=orderAgnosticBS(arr,target);System.out.println(ans);
     }
-    static int orderAgnosticBS(int []arr,int target)
+    static int orderAgnosticBS  (int []arr,int target)
     {
         int start=0;
         int  end=arr.length-1;
